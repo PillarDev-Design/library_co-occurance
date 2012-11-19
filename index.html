@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <title>Placeholder Title</title>
+        <!-- D3 -->
+        <script type='text/javascript' src='/data/js/d3.js'></script>
+        <!-- MooTools -->
+        <script type='text/javascript' src='/data/js/mootools.js'></script>
+        <!-- Local JS File -->
+        <script type='text/javascript' src='/data/js/library_util.js'></script>
+        <!-- Local CSS File -->
+        <link href='/data/css/library_style.css' rel='stylesheet' type='text/css' />
+    </head>
+    <body>
+        <div id = 'chart_area'></div>
+        <div id = 'selection_area'>
+            Order: 
+            <select id='order'>
+                <option value='name'>by Name</option>
+                <option value='count'>by Frequency</option>
+                <option value='group'>by Cluster</option>
+            </select>
+        </div>
+        <script type='text/javascript'>
+            initialize();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,276 @@
+{
+    "nodes": [
+        {
+            "name": "Age",
+            "group": 0
+        },
+        {
+            "name": "Education",
+            "group": 0
+        },
+        {
+            "name": "HH_Income",
+            "group": 0
+        },
+        {
+            "name": "HH_w_Children",
+            "group": 0
+        },
+        {
+            "name": "HH_X_Race",
+            "group": 0
+        },
+        {
+            "name": "Hispanics",
+            "group": 0
+        },
+        {
+            "name": "Home_Value",
+            "group": 0
+        },
+        {
+            "name": "Housing",
+            "group": 0
+        },
+        {
+            "name": "LangXAge",
+            "group": 0
+        },
+        {
+            "name": "Ling_Isol",
+            "group": 0
+        },
+        {
+            "name": "Median_Rent",
+            "group": 0
+        },
+        {
+            "name": "PC_Income",
+            "group": 0
+        },
+        {
+            "name": "PovertyXAge",
+            "group": 0
+        },
+        {
+            "name": "Pub_Assist",
+            "group": 0
+        },
+        {
+            "name": "Pub_Transport",
+            "group": 0
+        },
+        {
+            "name": "Race",
+            "group": 0
+        },
+        {
+            "name": "Sex",
+            "group": 0
+        },
+        {
+            "name": "Social_Security",
+            "group": 0
+        },
+        {
+            "name": "Vehicles",
+            "group": 0
+        },
+        {
+            "name": "Work_Home",
+            "group": 0
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1,
+            "value": "5"
+        },
+        {
+            "source": 0,
+            "target": 2,
+            "value": "1"
+        },
+        {
+            "source": 0,
+            "target": 3,
+            "value": "4"
+        },
+        {
+            "source": 0,
+            "target": 4,
+            "value": "8"
+        },
+        {
+            "source": 0,
+            "target": 5,
+            "value": "0"
+        },
+        {
+            "source": 0,
+            "target": 6,
+            "value": "0"
+        },
+        {
+            "source": 0,
+            "target": 7,
+            "value": "4"
+        },
+        {
+            "source": 0,
+            "target": 8,
+            "value": "7"
+        },
+        {
+            "source": 0,
+            "target": 9,
+            "value": "6"
+        },
+        {
+            "source": 0,
+            "target": 10,
+            "value": "2"
+        },
+        {
+            "source": 0,
+            "target": 11,
+            "value": "1"
+        },
+        {
+            "source": 0,
+            "target": 12,
+            "value": "6"
+        },
+        {
+            "source": 0,
+            "target": 13,
+            "value": "3"
+        },
+        {
+            "source": 0,
+            "target": 14,
+            "value": "5"
+        },
+        {
+            "source": 0,
+            "target": 15,
+            "value": "5"
+        },
+        {
+            "source": 0,
+            "target": 16,
+            "value": "4"
+        },
+        {
+            "source": 0,
+            "target": 17,
+            "value": "3"
+        },
+        {
+            "source": 0,
+            "target": 18,
+            "value": "10"
+        },
+        {
+            "source": 0,
+            "target": 19,
+            "value": "4"
+        },
+        {
+            "source": 1,
+            "target": 0,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 2,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 3,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 4,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 5,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 6,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 7,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 8,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 9,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 10,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 11,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 12,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 13,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 14,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 15,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 16,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 17,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 18,
+            "value": ""
+        },
+        {
+            "source": 1,
+            "target": 19,
+            "value": ""
+        },
+    ]
+}
