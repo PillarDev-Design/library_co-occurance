@@ -7,3 +7,8 @@ line {
 text.active {
     fill: red;
 }
+#chart_area {
+    display: block;
+    margin: 30px auto 0;
+    margin-left: 100px;
+}
