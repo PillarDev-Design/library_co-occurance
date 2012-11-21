@@ -6,19 +6,19 @@
         },
         {
             "name": "Education",
-            "group": 0
+            "group": 1
         },
         {
             "name": "Income",
-            "group": 0
+            "group": 2
         },
         {
             "name": "Children",
-            "group": 0
+            "group": 3
         },
         {
             "name": "Race",
-            "group": 0
+            "group": 4
         }
     ],
     "links": [

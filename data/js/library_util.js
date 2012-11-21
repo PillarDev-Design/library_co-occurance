@@ -11,7 +11,7 @@
 /*------------------------------------------------------*\
  * Functions                                            *
 \*------------------------------------------------------*/
-function initialize(){
+function initialize() {
     var margin = {top: 80, right: 0, bottom: 10, left: 80},
         width = 720,
         height = 720;
@@ -29,7 +29,8 @@ function initialize(){
                     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ")");
 
     // AJAX Loading of JSON
-    d3.json('/data/json/alachua.json', function(libraries) {
+    //d3.json('/data/json/alachua.json', function(libraries) {
+    d3.json('/data/json/short_miserables.json', function(libraries) {
         var matrix = [],
             nodes = libraries.nodes,
             n = nodes.length;
