@@ -17,8 +17,9 @@ function initialize() {
         height = 720;
 
     var x = d3.scale.ordinal().rangeBands([0, width]),
-        z = d3.scale.linear().domain([0, 4]).clamp(true),
-        c = d3.scale.category10().domain(d3.range(10));
+        z = d3.scale.linear().domain([0, 10]).clamp(true),
+        c = d3.scale.category20().domain([0, 10]);
+        //c = d3.scale.category10().domain(d3.range(10));
 
     var svg = d3.select('#chart_area')
                 .append('svg')
@@ -30,7 +31,7 @@ function initialize() {
 
     // AJAX Loading of JSON
     //d3.json('/data/json/alachua.json', function(libraries) {
-    d3.json('/data/json/short_miserables.json', function(libraries) {
+    d3.json('/data/json/alachua.json', function(libraries) {
         var matrix = [],
             nodes = libraries.nodes,
             n = nodes.length;
