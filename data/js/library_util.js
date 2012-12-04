@@ -31,7 +31,7 @@ function initialize() {
 
     // AJAX Loading of JSON
     //d3.json('/data/json/alachua.json', function(libraries) {
-    d3.json('/data/json/alachua.json', function(libraries) {
+    d3.json('/data/json/alachua_new.json', function(libraries) {
         var matrix = [],
             nodes = libraries.nodes,
             n = nodes.length;
