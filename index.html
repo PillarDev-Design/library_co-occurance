@@ -9,12 +9,13 @@
         <script type='text/javascript' src='/data/js/mootools.js'></script>
         <!-- Local JS File -->
         <script type='text/javascript' src='/data/js/library_util.js'></script>
+        <script type='text/javascript' src='/data/js/finder_util.js'></script>
         <!-- Local CSS File -->
         <link href='/data/css/library_style.css' rel='stylesheet' type='text/css' />
     </head>
     <body>
-        <div id = 'chart_area'></div>
-        <div id = 'selection_area'>
+        <div id='chart_area'></div>
+        <div id='selection_area'>
             Order: 
             <select id='order'>
                 <option value='name'>by Name</option>
@@ -22,9 +23,25 @@
                 <option value='group'>by Cluster</option>
             </select>
         </div>
+        <div id='finder_container'>
+            <div id='current_json'></div>
+            <div id='state_container' class='category_container'>
+                <div id='state_selection' class='selection_container'>
+                </div>
+            </div>
+            <div id='county_container' class='category_container'>
+                <div id='county_selection' class='selection_container'>
+                </div>
+            </div>
+            <div id='library_container' class='category_container'>
+                <div id='county_selection' class='selection_container'>
+                </div>
+            </div>
+            <div class='clear'></div>
+        </div>
         <script type='text/javascript'>
             initialize();
-            //bostock();
+            finder_initialize();
         </script>
     </body>
 </html>

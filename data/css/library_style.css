@@ -12,3 +12,38 @@ text.active {
     margin: 30px auto 0;
     margin-left: 100px;
 }
+.clear{
+    clear: both;
+}
+#finder_container{
+    width: 99%;
+    border: 1px solid black;
+    height: 600px;
+}
+    #current_json{
+        margin: 5px;
+        border: 1px solid black;
+        width: 99%;
+        height: 50px;
+    }
+    .category_container{
+        float: left;
+        width: 30%;
+        height: 500px;
+        margin: 10px;
+        border: 1px solid black;
+    }
+        #state_container{
+        }
+        #county_container{
+        }
+        #library_container{
+        }
+            .selection_container{
+            }
+            #state_selection{
+            }
+            #county_selection{
+            }
+            #library_selection{
+            }

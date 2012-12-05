@@ -30,7 +30,7 @@ function initialize() {
                     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ")");
 
     // AJAX Loading of JSON
-    //d3.json('/data/json/alachua.json', function(libraries) {
+    //d3.json('/data/json/short_miserables.json', function(libraries) {
     d3.json('/data/json/alachua_new.json', function(libraries) {
         var matrix = [],
             nodes = libraries.nodes,
