@@ -15,6 +15,9 @@ text.active {
 .clear{
     clear: both;
 }
+.wide_select {
+    width: 90%;
+}
 #finder_container{
     width: 99%;
     border: 1px solid black;
