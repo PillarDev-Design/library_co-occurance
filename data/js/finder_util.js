@@ -1,10 +1,16 @@
 function finder_init(){
     d3.json('/data/json/library.json', function(libraries){
+        // Declare Variables
+        var placeHolder,
+            stateList = [],
+            numOfStates = libraries['states'].length,
+            selectedState,
+            selectedCounty,
+            numOfCounties;
+        
         // Create testVar. Can be accessed in console.
         testVar = libraries;
-        // Create a blank placeHolder.
-        var placeHolder;
-        
+
         //********************************************************************\\
         // Examples
         // ---------------------------------------------------------------------
@@ -36,12 +42,7 @@ function finder_init(){
         // Populate the HTML with the information
         $('current_json').innerHTML = "Current JSON: library.json";
         
-        // Populate the states
-        var stateList = [],
-            numOfStates = 0;
-        
-        numOfStates = libraries['states'].length;
-
+        // Populate the stateList array
         for(var i=0; i<numOfStates; i++){
             stateList.push(libraries['states'][i][0]['name']);
         }
@@ -56,14 +57,21 @@ function finder_init(){
         }
         placeHolder += "</select>";
         $('state_selection').innerHTML = placeHolder;
+
         //********************************************************************\\
         // Create Select List for Counties
         $('state').addEvent('change', function(){
+            // Clear
+            placeHolder = "";
+            $('county_selection').innerHTML = "";
+            $('library_selection').innerHTML = "<select size='10' id='library' class='wide_select' name='library'></select>";
+
+            // Start the build
             placeHolder = "<select size='10' id='county' class='wide_select' name='county'>";
-            var selectedState = $('state').value;
+            selectedState = $('state').value;
 
             for(var i=0; i<numOfStates; i++){
-                if(libraries['counties'][i][0]['name'] === selectedState){
+                if(libraries['states'][i][0]['name'] === selectedState){
                     var numOfCounties = libraries['states'][i][0]['counties'].length;
                     for(var j=0; j<numOfCounties; j++){
                         placeHolder += ("<option value='" + libraries['states'][i][0]['counties'][j][0]['name'] + "'>" + libraries['states'][i][0]['counties'][j][0]['name'] + "</option>");
@@ -72,19 +80,39 @@ function finder_init(){
             }
             placeHolder += "</select>";
             $('county_selection').innerHTML = placeHolder;
-        });
 
-        //placeHolder += "<select size='10' id='state' name='state'>";
-        //placeHolder += "<option value='Florida'>Florida</option>";
-        //placeHolder += "</select>";
-        //$('state_selection').innerHTML = placeHolder;
+            //********************************************************************\\
+            // Create Select List for Libraries
+            $('county').addEvent('change', function(){
+                console.log('Change');
+                // Clear
+                placeHolder = "";
+                $('library_selection').innerHTML = "";
+
+                // Start the build
+                placeHolder = "<select size='10' id='library' class='wide_select' name='library'>";
+                selectedState = $('state').value;
+                selectedCounty = $('county').value;
+                numOfCounties = $('county').options.length;
+
+                for (var i=0; i<numOfStates; i++){
+                    if(libraries['states'][i][0]['name'] === selectedState){
+                        for (var j=0; j<numOfCounties; j++){
+                            if(libraries['states'][i][0]['counties'][j][0]['name'] === selectedCounty){
+                                var numOfLibraries = libraries['states'][i][0]['counties'][j][0]['libraries'].length;
+                                for(var k=0; k<numOfLibraries; k++){
+                                    placeHolder += ("<option value='" + libraries['states'][i][0]['counties'][j][0]['libraries'][k] + "'>" + libraries['states'][i][0]['counties'][j][0]['libraries'][k] + "</option>");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                placeHolder += "</select>";
+                $('library_selection').innerHTML = placeHolder;
+            });
+        });
         
-        // Add County Population Events
-        //$('state_selection').addEvent('click', function(){
-        //    if($('state').value === "Florida"){
-        //        placeHolder = "";
-        //    }
-        //});
 
     });
 }
